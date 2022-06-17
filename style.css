@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+ .no-select{
+   user-select: none;
+ }
+.home .navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:active{
+  background-color: #d6249f;
+}
+
+.header{
+ background-color: #232a34;
+ /* height: 100vh; */
+}
+.navbar{
+    background-color: #232a34;
+}
+.navbar i{
+    color: #fff;
+}
+.navbar i:focus{
+    box-shadow: none;
+}
+.navbar .nav-item .nav-link{
+     color: white; 
+    font-size: 18px;
+    margin: 0px 5px;
+    display: inline-block;
+    letter-spacing: 2;
+    transition: all .4s ease;
+} .navbar .nav-item .nav-link:hover{
+    color: #d70f64;
+} 
+.navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #d70f64;
+    transition: width .3;
+}
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+  /* section1 */
+  .section1 img{
+      border: 10px solid transparent;
+      border-radius: 50%;
+      background: linear-gradient(60deg, #efa51a, #ce00 100%);
+      display: inline-block;
+  }
+  .section1 h1,
+  .section1 h2,h3{
+      color:white;
+  }
+  .section1 h1{
+      background-color: #d70f64;
+      width:80px;
+      border-radius: 10px 20px 0px  10px;
+      padding: 7px 7px;
+      font-size: 30px;
+      position: relative;
+
+  }
+  .section1 h2{
+      font-size: 45px;
+      letter-spacing: 2;
+  }
+  .section1 h3{
+      font-size: 45px;
+      position: relative;
+      display: inline-block;
+  }
+  .section1 h3::before{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:0;
+      height: 100%;
+      border-right: 4px solid #d70f64;
+      box-shadow: 0 0 8px 8px #d70f64;
+      overflow: hidden;
+      color: #d70f64;
+      animation: scan 4s linear infinite;
+      }
+      @keyframes scan{
+          0%, 10%, 100%{
+              width:0
+          }
+          60%, 80%{
+              width:100%;
+          }
+      }
+      .section1 ul li{
+          color: #fff;
+          font-size: 18px;
+          letter-spacing: 2;
+          margin: 15px 0px;
+          position: relative;
+      }
+      .section1 ul li a{
+        color: #fff;
+        text-decoration: none;
+      }
+      /* about */
+      #about h3{
+        color: black;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+      }
+      #about h3::after{
+        content: "";
+    position: absolute;
+    left:45%;
+    right: 0;
+    bottom:0;
+    background-color: #d70f64;
+    display: block;
+    width: 10%;
+    height: 5px;
+    border-radius: 10px;
+      }
+      #about p{
+        font-size: 18px;
+        word-break: 1;
+        letter-spacing: 1.5;
+      }
+
+      /* services */
+      #services{
+       background-color: #232a34;
+      }
+      #services h3{
+        color: white;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+      }
+      #services h3::after{
+        content: "";
+    position: absolute;
+    left:42%;
+    right: 0;
+    bottom:0;
+    background-color: #d70f64;
+    display: block;
+    width: 17%;
+    height: 5px;
+    border-radius: 10px;
+      }
+      #services .card{
+        background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
+        border-radius: 10px;
+        transition: all 0.6s ease-in-out;
+      }
+      #services .card:hover{
+        transform: scale(1.03);
+        background: linear-gradient(to bottom right, #ff48b6, #d70f64);
+        color: white;
+      }
+      #services .card i{
+        font-size: 50px;
+        color: #fff;
+      }
+      #services .card h4{
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      #services .card p{
+          color: #232a34;
+         font-size: 16px;
+         letter-spacing: 1;
+      }
+
+      /* progress bar */
+      #skills h3{
+        color: black;
+        font-size: 42px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+      }
+      #skills h3::after{
+        content: "";
+    position: absolute;
+    left:45%;
+    right: 0;
+    bottom:0;
+    background-color: #d70f64;
+    display: block;
+    width: 10%;
+    height: 5px;
+    border-radius: 10px;
+      }
+
+ .prog .card{
+      background:white; 
+     border-radius: 5px;
+        display: flex;
+     align-items: center;
+      justify-content: space-evenly;
+     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+   }
+ 
+  .prog .card .circle{
+      position: relative;
+      height: 150px;
+     width:150px; 
+     border-radius: 50%;
+     cursor: default;
+ }
+    .prog.card .circle .box,
+   .card .circle .box span{
+        position: absolute;
+       top:50%;
+       left:50%;
+   } 
+   .prog .card .circle .box{
+       height: 100%;
+       width:100%; 
+      border-radius: 50%;
+      transition: all 0.5s;
+      }
+     .prog .card .circle .box span,
+      .wrapper .card .text{
+       position: absolute;
+       top:50%;
+       left: 50%;
+       background: linear-gradient(to left, #ff48b6, #d70f64);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color:transparent;
+      }
+     .prog .circle .box span{
+          font-size: 40px;
+          font-weight: 600;
+          transform: translate(-45%, -45%);
+          transition: all 1s;
+      }
+      .prog .circle .box span:hover{
+         text-shadow: 1px 1px 2px rgb(198, 187, 187);
+      }
+      .prog.card .circle:hover .box span{
+          transform: translate(-45%, -45%) scale(1.09);
+      }
+      .prog .card .text{
+          font-size: 22px;
+          font-weight: 600;
+          text-transform: uppercase;
+      }
+
+
+      /* work me */
+      .work-me{
+        background-color: #232a34;
+      }
+    
+    .work-me h3{
+      color: white;
+        font-size: 38px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+    }
+    .work-me h3::after{
+      content: "";
+      position: absolute;
+      left:43%;
+      right: 0;
+      bottom:0;
+      background-color: #d70f64;
+      display: block;
+      width: 15%;
+      height: 5px;
+      border-radius: 10px;
+    }
+    .work-me .card{
+       border-radius: 10px; 
+      position: relative;
+      color:white
+    }
+    
+    .work-me .card::after{
+      position: absolute;
+      content: "";
+      width:100px;
+      height: 100px;
+      background-color: #d70f64;
+      left: 0;
+      clip-path: circle(40% at 0% 0%);
+      /* padding: 1rem;  */
+      border-radius: 10px;
+        }
+    .work-me h4{
+      font-weight: 600;
+      position: relative;
+    padding: 8px 0px;
+    color: #d70f64;
+    }
+    .work-me p{
+    color: grey;
+    }
+    
+
+  /* contact */
+  #contact h3{
+      color: black;
+        font-size: 38px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+    }
+    #contact  h3::after{
+      content: "";
+      position: absolute;
+      left:45%;
+      right: 0;
+      bottom:0;
+      background-color: #d70f64;
+      display: block;
+      width: 10%;
+      height: 5px;
+      border-radius: 10px;
+    }
+    #contact .contact-me{
+      background-color: #232a34;
+      border-radius: 15px 15px 0px 0px;
+    }
+    #contact .contact-me h4{
+      font-size: 35px;
+      color: white;
+     font-weight: 600;
+     letter-spacing: 1;
+    }
+    #contact .contact-me i{
+      color: #232a34;
+      margin: 0px 10px;
+      font-weight: 600;
+      font-size: 22px;
+      padding: 5px 5px;
+      border-radius: 50px;
+      background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+    transition: all 0.3s ease-in;
+    }
+   
+    #contact form input{
+      border-radius: 5px;
+    }
+    #contact form input:focus{
+      box-shadow: none;
+     border: 1px solid #d70f64;
+    }
+    #contact form textarea:focus{
+      box-shadow: none;
+      border: 1px solid #d70f64;
+    }
+    #contact form .btn{
+      color: white;
+      background:linear-gradient(to bottom right, #ff48b6, #ff7e6c, #d70f64);
+      font-size: 16px;
+     margin: 8px 8px;
+     width: 80px;
+     border-radius: 10px;
+     font-weight: 600;
+     transition: all 2s ease-in;
+     outline: 2px solid #ff005c;
+     border: 1px solid #ff005c;
+     cursor: pointer;
+     transition: all 250ms;
+    }
+    #contact form .btn:hover{
+      outline-offset: -8px;
+      color:rgb(34, 34, 34);
+      background: none;
+    }
+
+  /* footer */
+  .footer{
+    background-color: #232a34;
+  }
+  .footer .content h4{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2;
+    font-weight: 600;
+  }
+  .footer .icon{
+    color: #fff;
+    margin: 5px 10px;
+    font-size: 22px;
+    animation: first-color .5s ease-in-out infinite alternate;
+  }
+  @keyframes first-color{
+    0%{
+      text-shadow: 0 0  10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285aeb;
+    }
+    100%{
+      text-shadow: 0 0  5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285aeb;
+    }
+  }
+  

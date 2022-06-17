@@ -1,0 +1,149 @@
+@media screen and (max-width: 1200px){
+    .section1 h2{
+        font-size: 40px;
+    }
+    .section1 h3{
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width: 992px){
+    .section1 h2{
+        font-size: 35px;
+    }
+    .section1 h3{
+        font-size: 30px;
+    }
+    .section1 ul li{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2;
+        margin: 8px 0px;
+    }
+    #about h3{
+        font-size: 40px;
+      }
+      #about p{
+        font-size: 14px;
+        word-break: 1;
+        letter-spacing: 1.5;
+      }
+      #contact .contact-me i{
+        margin: 0px 6px;
+        font-size: 20px;
+      }
+}
+   
+@media screen and (max-width: 768px){
+  .section1 h1{
+    left: 38%;
+    font-size: 30px;
+    bottom: 1rem;
+ } 
+    .section1 h2{
+        font-size: 40px;
+    }
+    .section1 h3{
+        font-size: 40px;
+    }
+    .section1 ul li{
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 2;
+        margin: 8px 0px;
+    }
+    #about h3{
+        font-size: 40px;
+      }
+      #about p{
+        font-size: 16px;
+        word-break: 1;
+        letter-spacing: 1.5;
+      }
+      #services h3{
+        font-size: 38px;
+      }
+}
+@media screen and (max-width: 476px){
+   .section1 h1{
+   left: 38%;
+   font-size: 25px;
+   bottom: 1rem;
+} 
+    .section1 h2{
+        font-size: 25px;
+    }
+    .section1 h3{
+        font-size: 25px;
+    }
+    .section1 ul li{
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 2;
+        margin: 8px 0px;
+    }
+    #about h3{
+        font-size: 32px;
+      }
+      #about h3::after{
+    left:40%;
+    width: 20%;
+      }
+      #about p{
+        font-size: 14px;
+        word-break: 1;
+        letter-spacing: 1.5;
+      }
+      #services .card:hover{
+        transform: scale(1.01);
+      }
+      #services h3{
+        font-size: 25px;
+      }
+      #services .card i{
+        font-size: 40px;
+      }
+      #services .card h4{
+        font-size: 22px;
+      }
+      #services .card p{
+         font-size: 14px;
+      }
+      #skills h3{
+        font-size: 28px;
+      }
+     
+      .prog .card .circle{
+        height: 150px;
+       width:150px; 
+   }
+   .prog .card .circle .box span,
+   .wrapper .card .text{
+    top:50%;
+    left: 50%;
+   }
+   .prog .circle .box span{
+    font-size: 32px;
+}
+.work-me h3{
+      font-size: 28px;
+  }
+  #contact h3{
+      font-size: 32px;
+  }
+  #contact .contact-me h4{
+    font-size: 28px;
+  }
+  #contact .contact-me i{
+    margin: 0px 5px;
+    font-size: 20px;
+  }
+  .footer .content h4{
+    font-size: 22px;
+  }
+  .footer .icon{
+    margin: 5px 10px;
+    font-size: 18px;
+  }
+ 
+}
